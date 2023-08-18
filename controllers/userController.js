@@ -35,7 +35,6 @@ profile = async function (req,res) {
 }
 
 annualPlace = async function(req,res){
-    console.log("heyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy putting")
     console.log(req.params.userId)
     if (req.params.userId >0) {
         await User.update(
@@ -74,7 +73,7 @@ userExists = async function (req,res) {
 }
 
 username = async function(req,res) {
-    console.log("heyyyyyyy",req.params.userId)
+    console.log(req.params.userId)
     if (req.params.userId > 0){
         await User.findOne({where: {userId : req.params.userId}})
         .then(data => {

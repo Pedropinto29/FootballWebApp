@@ -12,4 +12,5 @@ db.User = require('./userModel');
 db.Article.belongsTo(db.User, {foreignKey: "userId"});
 db.User.hasMany(db.Article, {foreignKey: "userId"});
 
+
 module.exports = db

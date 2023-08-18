@@ -43,7 +43,6 @@ gameFindOne = async function(req, res) {
 }
 
 gameUpdate = async function(req,res) {
-    console.log('heyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy')
     if (req.params.gameId > 0) {
         await Game.update(
             {homeScore : req.body.homeScore,
